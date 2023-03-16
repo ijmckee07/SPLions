@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+    <head>
+        <link rel="stylesheet" href="https://sandstonepoint.qld.lions.org.au/ozv2/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://sandstonepoint.qld.lions.org.au/ozv2/assets/css/toggle-switch.css" />
+        <link rel="stylesheet" href="https://sandstonepoint.qld.lions.org.au/ozv2/assets/css/base.css" media="all">
+        <link rel="stylesheet" href="https://sandstonepoint.qld.lions.org.au/ozv2/assets/css/jquery-ui.css" />
+        <link rel="icon" href="https://sandstonepoint.qld.lions.org.au/images/favicon.ico" type="image/x-icon"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js" integrity="sha256-pXtSQrmprcTB74RsNlFHuJxHK5zXcPrOMx78uWU0ayU=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js" integrity="sha256-VNIbBnZ4TQyYO71Ak4mHcK3vqTLYm3LIr9iBg6GRcqc=" crossorigin="anonymous"></script>
+                <title>Search Page</title>
+        <meta name="title" content="Search Page " />
+        <meta name="keywords" content="OZ Club House " />
+        <meta name="description" content="Search this Lions website " />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            
+	$.fn.modal.Constructor.prototype.enforceFocus = function() {
+  modal_this = this
+  $(document).on('focusin.modal', function (e) {
+    if (modal_this.$element[0] !== e.target && !modal_this.$element.has(e.target).length 
+    && !$(e.target.parentNode).hasClass('cke_dialog_ui_input_select') 
+    && !$(e.target.parentNode).hasClass('cke_dialog_ui_input_text') &&
+    !$(e.target.parentNode).hasClass('cke_dialog_ui_input_textarea') && 
+!$(e.target.parentNode).hasClass('cke')) {
+      modal_this.$element.focus()
+    }
+  })
+};
+</script>
+            </head>
+    <body>
+        <div class="container">	
+
+            
+    <div class="row header_main" id="top-of-site">
+
+        <div class="header-logos col-sm-7 col-sm-push-5">
+
+            <a href="https://sandstonepoint.qld.lions.org.au">
+                <img src="https://sandstonepoint.qld.lions.org.au/ozv2/assets/img/logo-lions-australia-centennial .png" class="img-responsive" alt="Lions Club Australia" /> 
+            </a>
+
+        </div>	
+
+        <div class="header-sitename col-sm-5 col-sm-pull-7">
+
+            <h3>
+                Lions Club of Sandstone Point Inc.                            </h3>
+
+            <h4>QLD, Australia, District 201Q3                            </h4>
+
+            <div class="slogan hidden-xs">
+                <p>we serve... service to the community... learning new skills... building lasting friendships... </p>
+                            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="row">
+        <div class="navbar main-bar navbar-default">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse navbar-responsive-collapse">
+
+                <ul class="nav navbar-nav">
+
+                    	
+
+                                                    <li><a href="/">home</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/news">CLUB NEWS</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/aboutus">ABOUT US</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/contact">contact us</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/joinnow">JOIN NOW</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/events">EVENTS</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/projects">PROJECTS</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/sponsors">SPONSORS</a></li>
+                                    
+                        
+                    	
+
+                                                    <li><a href="/links">LINKS</a></li>
+                                    
+                        
+                    	
+
+                        
+                                                                    <li class="dropdown"><a href="/login"  class="dropdown-toggle">LOGIN</a>
+                                                                </li>
+                            
+                    
+
+                </ul>
+
+                <form class="google-search-form navbar-form navbar-right" role="search" method="get" action="/search">
+                    <div class="form-group">
+                        <input name="query" type="text" class="form-control" placeholder="Enter search term">
+                        <input name="q" type="hidden">
+                    </div>
+                    <button type="submit" class="btn btn-default btn-sm">Search</button>
+                </form>
+                <script>
+                    $(document).ready(function() {
+                        $('.google-search-form').submit(function(e) {
+                            var query = $('input[name="query"]', this).val();
+                            var q = 'site:sandstonepoint.qld.lions.org.au ' + query;
+                            $('input[name="q"]', this).val(q);
+                        });
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+                <div class="container" id="content">		
+            <div class="col-lg-9 left_container_main">
+			
+<h1>Search Results - </h1>
+
+<div class="well">
+    <form class="google-search-form" class="form-search" role="search" method="get" action="/search">
+        <div class="input-group">
+            <input name="query" type="text" class="form-control" value="">
+            <input name="q" type="hidden">
+            <span class="input-group-btn">
+                <button type="submit" class="btn btn-search">Search</button>
+            </span>
+        </div>
+    </form>
+    <script>
+        $(document).ready(function() {
+            $('.google-search-form').submit(function(e) {
+                var query = $('input[name="query"]', this).val();
+                var q = 'site:sandstonepoint.qld.lions.org.au ' + query;
+                $('input[name="q"]', this).val(q);
+            });
+        });
+    </script>
+</div>
+
+<div class="google-search-results reset-box-sizing">
+    <script>
+    (function() {
+        var cx = '018210707410438931881:hfmemwyv_cw';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+    </script>
+    <gcse:searchresults-only></gcse:searchresults-only>
+</div>
+
+    
+			</div>
+			<div class="col-lg-3 right_sidebar_main">
+			<div class="well">
+        <h4>Community Service            </h4>
+    <div class="block-content">
+        <p>Lions are people who get involved in humanitarian efforts locally, nationally, and internationally.</p>
+
+<p>People like you can find community service and volunteer opportunities in Lions through:</p>
+
+<ul>
+	<li>Mentoring</li>
+	<li>Leadership Development</li>
+	<li>Medical Research Fundraising</li>
+	<li>Disaster Relief</li>
+</ul>
+
+<p>If &nbsp;you would like to serve your community, through the many volunteer opportunities in Lions, here is a little more information about <a href="joinnow/">joining lions</a>.</p>
+
+<p><img alt="Facebook logo" src="https://lionsclubs.org.au/ochimages/facebooklogo22.jpg" />&nbsp;&nbsp;Follow us on <a href="https://www.facebook.com/sandstonepointlions/">Facebook</a></p>
+
+<p><img alt="Lions logo" src="https://lionsclubs.org.au/ochimages/lionlogo_2c-200w.jpg" style="width:100px" /></p>
+            </div>
+    </div>
+<div class="well">
+    <h4>
+                Lions Login!
+            </h4>
+    <div class="block-content" id="main-container">
+        <script type="text/javascript" src="https://sandstonepoint.qld.lions.org.au/ozv2/assets/js/dashboard/base.js"></script>
+                <script type="text/javascript" src="https://sandstonepoint.qld.lions.org.au/ozv2/assets/js/dashboard/login.js"></script>
+		<form id="login-form" method="post" class="form-horizontal">
+                <div class="form-group account-firstname">
+                    <input type="text" class="col-lg-2 form-control" placeholder="First Name" name="first_name" id="first_name" >
+                </div>
+				 <div class="form-group account-lastname">
+                    <input type="text" class="col-lg-2 form-control" placeholder="Last Name" name="last_name" id="last_name" required="true">
+                </div>
+                <div class="form-group account-username account-password">
+                   <input type="password" class="col-lg-2 form-control" placeholder="Password" name="pass" id="pass">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="remember" id="remember" value="false">Remember me                    </label>
+                </div>
+                <button class="btn btn-block btn-large btn-primary" style="margin-top: 15px;">Sign in</button>
+            </form>
+		      </div>
+</div>			</div>
+		</div>
+		<div id="footer">
+      <div class="container">
+        <p class="credit text-center">
+
+            <a href="/contact">Contact Us</a> |
+            <a href="/aboutus">About Us</a> |
+            <a href="/privacy">Privacy Policy</a> |
+
+            Copyright 2018 LionsClubs.org.au All rights reserved                
+        </p>
+      </div>
+    </div>                <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+</div><!-- /.modal -->
+
+<script>
+//
+
+$('body').on('hidden.bs.modal', '.modal', function () {
+    $(this).removeData('bs.modal');
+});
+
+$('iframe').each(function() {
+  var url = $(this).attr("src");
+  if ($(this).attr("src").indexOf("?") > 0) {
+    $(this).attr({
+      "src" : url + "&wmode=transparent",
+      "wmode" : "Opaque"
+    });
+  }
+  else {
+    $(this).attr({
+      "src" : url + "?wmode=transparent",
+      "wmode" : "Opaque"
+    });
+  }
+});
+ 
+</script>
+
+<!-- /.modal -->
+               
+    </body>
+</html>

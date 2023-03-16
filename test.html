@@ -118,3 +118,53 @@
 
                 <div class="container" id="content">		
             <div class="col-lg-9 left_container_main">
+
+
+
+
+
+
+                <div id="footer">
+                    <div class="container">
+                      <p class="credit text-center">
+              
+                          <a href="contact.html">Contact Us</a> |
+                          <a href="aboutus.html">About Us</a> |
+                          <a href="privacy.html">Privacy Policy</a> |
+              
+                          Copyright 2018 LionsClubs.org.au All rights reserved                
+                      </p>
+                    </div>
+                  </div>                <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              </div><!-- /.modal -->
+              
+              <script>
+              //
+              
+              $('body').on('hidden.bs.modal', '.modal', function () {
+                  $(this).removeData('bs.modal');
+              });
+              
+              $('iframe').each(function() {
+                var url = $(this).attr("src");
+                if ($(this).attr("src").indexOf("?") > 0) {
+                  $(this).attr({
+                    "src" : url + "&wmode=transparent",
+                    "wmode" : "Opaque"
+                  });
+                }
+                else {
+                  $(this).attr({
+                    "src" : url + "?wmode=transparent",
+                    "wmode" : "Opaque"
+                  });
+                }
+              });
+               
+              </script>
+              
+              <!-- /.modal -->
+                             
+                  </body>
+              </html>

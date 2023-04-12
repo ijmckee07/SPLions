@@ -104,7 +104,7 @@
                     $(document).ready(function() {
                         $('.google-search-form').submit(function(e) {
                             var query = $('input[name="query"]', this).val();
-                            var q = 'site:sandstonepoint.qld.lions.org.au ' + query;
+                            var q = 'site:lionssandstonepoint.org.au ' + query;
                             $('input[name="q"]', this).val(q);
                         });
                     });
@@ -122,7 +122,7 @@
 <h1>Search Results - </h1>
 
 <div class="well">
-    <form class="google-search-form" class="form-search" role="search" method="get" action="/search">
+    <form class="google-search-form" class="form-search" role="search" method="get" action="search.html">
         <div class="input-group">
             <input name="query" type="text" class="form-control" value="">
             <input name="q" type="hidden">
@@ -135,7 +135,7 @@
         $(document).ready(function() {
             $('.google-search-form').submit(function(e) {
                 var query = $('input[name="query"]', this).val();
-                var q = 'site:sandstonepoint.qld.lions.org.au ' + query;
+                var q = 'site:lionssandstonepoint.org.au ' + query;
                 $('input[name="q"]', this).val(q);
             });
         });
